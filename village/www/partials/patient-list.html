@@ -1,1 +1,23 @@
-Patient list goes here...
+<h2>All Registered Patients ({{patients.length}} in total)</h2>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>Height (cm)</th>
+        <th>Weight (kg)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="patient in patients" style="cursor: pointer;">
+        <td>
+            <a href="#/patients/{{patient.id}}">{{patient.firstName}} {{patient.lastName}}</a>
+        </td>
+        <td>{{patient.gender}}</td>
+        <td>{{patient.age}}</td>
+        <td>{{patient.height}}</td>
+        <td>{{patient.weight}}</td>
+    </tr>
+    </tbody>
+</table>

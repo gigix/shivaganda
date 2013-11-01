@@ -12,6 +12,10 @@ shivagandaApp.config(['$routeProvider',
                 templateUrl: 'partials/patient-list.html',
                 controller: 'PatientListCtrl'
             }).
+            when('/patients/new', {
+                templateUrl: 'partials/patient-new.html',
+                controller: 'PatientNewCtrl'
+            }).
             when('/patients/:patientId', {
                 templateUrl: 'partials/patient-detail.html',
                 controller: 'PatientDetailCtrl'
