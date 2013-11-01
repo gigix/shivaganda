@@ -29,16 +29,5 @@
             </label>
         </div>
     </div>
-
-    <div class="form-group">
-        <label for='patient-height'>Height (cm)</label>
-        <input id='patient-height' type="number" class="form-control" ng-model="patient.height" max="240" required/>
-    </div>
-
-    <div class="form-group">
-        <label for='patient-weight'>Weight (kg)</label>
-        <input id='patient-weight' type="number" class="form-control" ng-model="patient.weight" max="300" required/>
-    </div>
-
     <input type="submit" ng-disabled="newPatient.$invalid || patient.gender == undefined" class="btn btn-default"/>
 </form>
