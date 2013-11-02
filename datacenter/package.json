@@ -1,0 +1,10 @@
+{
+    "name": "shivaganda-server",
+    "description": "This is running in a data-center",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "3.x",
+        "cradle": "0.6.6"
+    }
+}

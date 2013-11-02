@@ -2,8 +2,19 @@
 
 var shivagandaControllers = angular.module('shivagandaControllers', []);
 
-shivagandaControllers.controller('PatientListCtrl', function PatientListCtrl($scope) {
+shivagandaControllers.controller('PatientListCtrl', function PatientListCtrl($scope, $http, $location) {
     $scope.patients = loadAllPatients();
+
+    $scope.sync = function () {
+        $http.post('http://localhost:8001/patients', $scope.patients).
+            success(function (data, status, headers, config) {
+                saveAllPatients(data);
+                $location.path('/');
+            }).
+            error(function (data, status, headers, config) {
+                alert('error: ' + data);
+            });
+    };
 
     $scope.reset = function () {
         localStorage.clear();
