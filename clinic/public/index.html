@@ -1,0 +1,27 @@
+<html ng-app='shivagandaClinicApp' ng-controller='HomeCtrl'>
+<head>
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"/>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <title>Shivaganda Clinic</title>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Shivaganda Online</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://github.com/gigix/shivaganda" target="_blank">GitHub</a></li>
+        </ul>
+    </div><!--/.nav-collapse -->
+</div>
+<div class="container" ng-view></div>
+</body>
+</html>

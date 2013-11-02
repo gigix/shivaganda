@@ -3,9 +3,9 @@
 //var datacenterDomain = 'http://localhost:8001';
 var datacenterDomain = 'http://shivaganda-datacenter.nodejitsu.com';
 
-var shivagandaControllers = angular.module('shivagandaControllers', []);
+var shivagandaVillageControllers = angular.module('shivagandaVillageControllers', []);
 
-shivagandaControllers.controller('PatientListCtrl', function PatientListCtrl($scope, $http, $location) {
+shivagandaVillageControllers.controller('PatientListCtrl', function PatientListCtrl($scope, $http, $location) {
     $scope.patients = loadAllPatients();
 
     $scope.sync = function () {
@@ -24,11 +24,11 @@ shivagandaControllers.controller('PatientListCtrl', function PatientListCtrl($sc
     };
 });
 
-shivagandaControllers.controller('PatientNewCtrl', function PatientNewCtrl() {
+shivagandaVillageControllers.controller('PatientNewCtrl', function PatientNewCtrl() {
 
 });
 
-shivagandaControllers.controller('PatientCreateCtrl', function PatientCreateCtrl($scope, $location) {
+shivagandaVillageControllers.controller('PatientCreateCtrl', function PatientCreateCtrl($scope, $location) {
     $scope.save = function () {
         var allPatients = loadAllPatients();
         var newPatient = $scope.patient;
@@ -39,7 +39,7 @@ shivagandaControllers.controller('PatientCreateCtrl', function PatientCreateCtrl
     };
 });
 
-shivagandaControllers.controller('PatientDetailCtrl', function PatientDetailCtrl($scope) {
+shivagandaVillageControllers.controller('PatientDetailCtrl', function PatientDetailCtrl($scope) {
 
 });
 

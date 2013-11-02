@@ -1,0 +1,35 @@
+<div class="jumbotron">
+    <p><a href='#/patients'>&lt;&lt; Back to patients</a></p>
+    <h2>Edit patient {{patient.firstName}} {{patient.lastName}} (ID: {{patient.id}})</h2>
+    <form class="form" name="editPatient" ng-submit="update()">
+        <div class="form-group">
+            <label for='patient-first-name'>First Name</label>
+            <input id='patient-first-name' type="text" class="form-control" ng-model="patient.firstName" required/>
+        </div>
+
+        <div class="form-group">
+            <label for='patient-last-name'>Last Name</label>
+            <input id='patient-last-name' type="text" class="form-control" ng-model="patient.lastName" required/>
+        </div>
+
+        <div class="form-group">
+            <label for='patient-age'>Age</label>
+            <input id='patient-age' type="number" class="form-control" ng-model="patient.age" max="129" required/>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="patient.gender" value="male">Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" ng-model="patient.gender" value="female">Female
+                </label>
+            </div>
+        </div>
+        <input type="submit" ng-disabled="editPatient.$invalid" class="btn btn-default"/>
+    </form>
+</div>

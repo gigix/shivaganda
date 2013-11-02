@@ -1,11 +1,11 @@
 'use strict';
 
-var shivagandaApp = angular.module('shivagandaApp', [
+var shivagandaVillageApp = angular.module('shivagandaVillageApp', [
     'ngRoute',
-    'shivagandaControllers'
+    'shivagandaVillageControllers'
 ]);
 
-shivagandaApp.config(['$routeProvider',
+shivagandaVillageApp.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
             when('/patients', {
