@@ -1,12 +1,15 @@
 'use strict';
 
+var datacenterDomain = 'http://localhost:8001';
+//var datacenterDomain = 'http://shivaganda-datacenter.nodejitsu.com';
+
 var shivagandaControllers = angular.module('shivagandaControllers', []);
 
 shivagandaControllers.controller('PatientListCtrl', function PatientListCtrl($scope, $http, $location) {
     $scope.patients = loadAllPatients();
 
     $scope.sync = function () {
-        $http.post('http://localhost:8001/patients', $scope.patients).
+        $http.post(datacenterDomain + '/patients', loadAllPatients()).
             success(function (data, status, headers, config) {
                 saveAllPatients(data);
                 $location.path('/');

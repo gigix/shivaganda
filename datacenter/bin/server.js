@@ -27,19 +27,19 @@ app.post('/patients', function (request, response) {
     var allPatientsFromClient = request.body.filter(function (patient) {
         return patient.id != undefined;
     });
-
     var allPatientsMerged = allPatientsFromClient;
 
-    for (var existingPatient in allPatients) {
-        if (allPatientsMerged.some(function (mergedPatient) {
+    allPatients.forEach(function (existingPatient) {
+        if (!allPatientsMerged.some(function (mergedPatient) {
             return existingPatient.id == mergedPatient.id;
         })) {
-            continue;
+            allPatientsMerged.push(existingPatient);
         }
-        allPatientsMerged.push(existingPatient);
-    }
+    });
 
     allPatients = allPatientsMerged;
+    console.log("<- sending response");
+    console.log(allPatients);
     response.send(JSON.stringify(allPatients));
 });
 
