@@ -1,7 +1,7 @@
 'use strict';
 
-var datacenterDomain = 'http://localhost:8001';
-//var datacenterDomain = 'http://shivaganda-datacenter.nodejitsu.com';
+//var datacenterDomain = 'http://localhost:8001';
+var datacenterDomain = 'http://shivaganda-datacenter.nodejitsu.com';
 
 var shivagandaControllers = angular.module('shivagandaControllers', []);
 
