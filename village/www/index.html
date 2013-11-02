@@ -19,15 +19,12 @@
     <div class="navbar-header">
         <a class="navbar-brand" href="#">Shivaganda Villages</a>
     </div>
-    <div class="navbar-default">
-        <ul class="nav navbar-nav navbar-left">
-            <li><a href="#/patients/new">Add Patient</a></li>
-            <li><a href="#" ng-click="sync()">Sync</a></li>
-            <li><a href="#" ng-click='reset()'>Reset (For Test)</a></li>
-        </ul>
-    </div>
 </div>
-
+<div>
+    <a href="#/patients/new" class="btn btn-primary">Add Patient</a>
+    <a href="#" ng-click="sync()" class="btn btn-primary">Sync</a>
+    <a href="#" ng-click='reset()' class="btn btn-danger">Reset (For Test)</a>
+</div>
 <div ng-view class="container"></div>
 </body>
 </html>
