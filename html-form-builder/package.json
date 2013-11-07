@@ -1,0 +1,11 @@
+{
+    "name": "enketo-html-form-builder",
+    "description": "generate html form from xform",
+    "version": "0.0.1",
+    "contributors": [
+        "Jeff Xiong"
+    ],
+    "dependencies": {
+        "node_xslt": "*"
+    }
+}
