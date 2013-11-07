@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script src="lib/xslt.js"></script>
+</head>
+<body>
+<h2>Form should go here...</h2>
+<div id="transformResult"></div>
+<script type="text/javascript">
+    window.onload = function () {
+        new Transformation().setXml("widgets.xml")
+                .setXslt("lib/xsl/openrosa2xmlmodel.xsl").transform("transformResult");
+    }
+</script>
+</body>
+</html>

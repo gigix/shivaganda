@@ -1,3 +1,0 @@
-[submodule "html-form-builder/lib/xsl"]
-	path = html-form-builder/lib/xsl
-	url = https://github.com/MartijnR/enketo-xslt

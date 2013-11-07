@@ -6,6 +6,6 @@
         "Jeff Xiong"
     ],
     "dependencies": {
-        "node_xslt": "*"
+        "express": "3.x"
     }
 }
