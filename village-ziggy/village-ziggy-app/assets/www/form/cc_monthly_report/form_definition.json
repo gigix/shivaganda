@@ -1,0 +1,80 @@
+{
+    "form_data_definition_version": "1",
+    "form": {
+        "bind_type": "village",
+        "default_bind_path": "/model/instance/cc_monthly_report_form/",
+        "fields": [
+            {
+                "name": "id",
+                "shouldLoadValue": true
+            },
+            {
+                "name": "name",
+                "bind": "/model/instance/cc_monthly_report_form/village_name",
+                "shouldLoadValue": true
+            },
+            {
+                "name": "code",
+                "bind": "/model/instance/cc_monthly_report_form/village_code",
+                "shouldLoadValue": true
+            },
+            {
+                "name": "reportingMonth",
+                "bind": "/model/instance/cc_monthly_report_form/reporting_month"
+            },
+            {
+                "name": "gps",
+                "bind": "/model/instance/cc_monthly_report_form/gps",
+                "shouldLoadValue": true
+            },
+            {
+                "name": "numberOfHouseholds",
+                "bind": "/model/instance/cc_monthly_report_form/households"
+            },
+            {
+                "name": "population",
+                "bind": "/model/instance/cc_monthly_report_form/village_population"
+            },
+            {
+                "name": "numberOfImprovedLatrines",
+                "bind": "/model/instance/cc_monthly_report_form/improved_latrines"
+            },
+            {
+                "name": "numberOfLatrinesWithSmoothCleanableFloor",
+                "bind": "/model/instance/cc_monthly_report_form/latrines_smooth_cleanable_floor"
+            },
+            {
+                "name": "numberOfLatrinesWithLid",
+                "bind": "/model/instance/cc_monthly_report_form/latrines_with_lid"
+            },
+            {
+                "name": "numberOfLatrinesWithSuperstructure",
+                "bind": "/model/instance/cc_monthly_report_form/latrines_with_superstructure"
+            },
+            {
+                "name": "numberOfLatrinesWithSignsOfUse",
+                "bind": "/model/instance/cc_monthly_report_form/latrines_signs_of_use"
+            },
+            {
+                "name": "numberOfLatrinesWithHandWashers",
+                "bind": "/model/instance/cc_monthly_report_form/latrines_hand_washers"
+            },
+            {
+                "name": "numberOfLatrinesWithAllImprovedReqs",
+                "bind": "/model/instance/cc_monthly_report_form/latrines_all_improved_reqs"
+            },
+            {
+                "name": "numberOfHouseholdsQualityChecked",
+                "bind": "/model/instance/cc_monthly_report_form/households_quality_checked"
+            },
+            {
+                "name": "numberOfHouseholdsCheckedAccurately",
+                "bind": "/model/instance/cc_monthly_report_form/checks_accurate"
+            },
+            {
+                "name": "submissionDate",
+                "bind": "/model/instance/cc_monthly_report_form/today"
+            }
+        ]
+    }
+}

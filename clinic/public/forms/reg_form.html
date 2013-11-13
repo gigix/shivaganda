@@ -1,0 +1,91 @@
+<html>
+<body>
+<form class="or clearfix" autocomplete="off" novalidate="novalidate" id="build_Registration-Form_1383835857"
+      onsubmit="return false;" data-edited="false">
+    <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.-->
+    <section class="form-logo"></section>
+    <h3 id="form-title">Registration Form</h3>
+
+
+    <label class=""><span lang="eng" class=" active"
+                          data-itext-id="/data/firstname:label">What's your first name?</span><span
+            class="required">*</span><span lang="eng" class="or-hint active" data-itext-id="/data/firstname:hint">or given name</span><input
+            autocomplete="off" type="text" name="/data/firstname" required="required" data-type-xml="string"><span
+            class="or-constraint-msg active" lang="">Value not allowed</span><span class="or-required-msg active"
+                                                                                   lang="">This field is required</span></label>
+    <label class=""><span lang="eng" class=" active"
+                          data-itext-id="/data/lastname:label">What's your last name?</span><span
+            class="required">*</span><span lang="eng" class="or-hint active" data-itext-id="/data/lastname:hint">or family name</span><input
+            autocomplete="off" type="text" name="/data/lastname" required="required" data-type-xml="string"><span
+            class="or-constraint-msg active" lang="">Value not allowed</span><span class="or-required-msg active"
+                                                                                   lang="">This field is required</span></label>
+    <fieldset class="restoring-sanity-to-legends">
+        <fieldset>
+            <legend><span lang="eng" class=" active" data-itext-id="/data/gender:label">What's your gender?</span><span
+                    class="required">*</span><span lang="eng" class="or-hint active" data-itext-id="/data/gender:hint">
+            </span>
+            </legend>
+            <label class="clearfix "><input autocomplete="off" type="radio" name="/data/gender" data-name="/data/gender"
+                                            value="male" required="required" data-type-xml="select1"><span lang="eng"
+                                                                                                           class=" active"
+                                                                                                           data-itext-id="/data/gender:option0">Male</span></label><label
+                class="clearfix " data-checked="true"><input autocomplete="off" type="radio" name="/data/gender"
+                                                             data-name="/data/gender" value="female" required="required"
+                                                             data-type-xml="select1"><span lang="eng" class=" active"
+                                                                                           data-itext-id="/data/gender:option1">Female</span></label><label
+                class="clearfix "><input autocomplete="off" type="radio" name="/data/gender" data-name="/data/gender"
+                                         value="other" required="required" data-type-xml="select1"><span lang="eng"
+                                                                                                         class=" active"
+                                                                                                         data-itext-id="/data/gender:option2">Other</span></label><span
+                class="or-constraint-msg active" lang="">Value not allowed</span><span class="or-required-msg active"
+                                                                                       lang="">This field is required</span>
+        </fieldset>
+    </fieldset>
+    <label class="with-media clearfix"><span lang="eng" class=" active" data-itext-id="/data/photo:label">Upload your photo</span><span
+            class="required">*</span><input autocomplete="off" type="file" name="/data/photo" required="required"
+                                            data-type-xml="binary" accept="image/*" class=""><span
+            class="required-subtle">Required</span>
+
+        <div class="file-feedback text-info">File inputs are experimental. Use only for testing.</div>
+        <span class="or-constraint-msg active" lang="">Value not allowed</span><span class="or-required-msg active"
+                                                                                     lang="">This field is required</span></label>
+    <fieldset class="or-group "><h4><span lang="eng" class=" active" data-itext-id="/data/questions_for_female:label">Female Only Questions</span>
+    </h4>
+        <fieldset class="restoring-sanity-to-legends or-branch" style="display: block;">
+            <fieldset>
+                <legend><span lang="eng" class=" active" data-itext-id="/data/questions_for_female/is_pregnant:label">Are You Pregnant?</span>
+                </legend>
+                <label class="clearfix " data-checked="true"><input autocomplete="off" type="radio"
+                                                                    name="/data/questions_for_female/is_pregnant"
+                                                                    data-name="/data/questions_for_female/is_pregnant"
+                                                                    value="yes"
+                                                                    data-relevant="(/data/gender = 'female')"
+                                                                    data-type-xml="select1"><span lang="eng"
+                                                                                                  class=" active"
+                                                                                                  data-itext-id="/data/questions_for_female/is_pregnant:option0">Yes</span></label><label
+                    class="clearfix "><input autocomplete="off" type="radio"
+                                             name="/data/questions_for_female/is_pregnant"
+                                             data-name="/data/questions_for_female/is_pregnant" value="no"
+                                             data-relevant="(/data/gender = 'female')" data-type-xml="select1"><span
+                    lang="eng" class=" active" data-itext-id="/data/questions_for_female/is_pregnant:option1">No</span></label><span
+                    class="or-constraint-msg active" lang="">Value not allowed</span><span
+                    class="or-required-msg active" lang="">This field is required</span></fieldset>
+        </fieldset>
+        <label class="or-branch" style="display: block;"><span lang="eng" class=" active"
+                                                               data-itext-id="/data/questions_for_female/pregnancy_length:label">How Many Weeks Have You Been Pregnant?</span><input
+                autocomplete="off" type="number" name="/data/questions_for_female/pregnancy_length"
+                data-constraint="(. &gt; '0' and . &lt; '40')"
+                data-relevant="(/data/gender = 'female') and (/data/questions_for_female/is_pregnant = 'yes')"
+                data-type-xml="int"><span lang="" class="or-constraint-msg active">Value must be between 0 and 40</span><span
+                class="or-required-msg active" lang="">This field is required</span></label>
+    </fieldset>
+    <!--end of group -->
+
+    <fieldset id="or-calculated-items" style="display:none;"><label class=""><input autocomplete="off" type="hidden"
+                                                                                    name="/data/meta/instanceID"
+                                                                                    data-type-xml="string"
+                                                                                    value="uuid:4e4933f5-5108-4cc2-8959-f5a9b0445475"></label>
+    </fieldset>
+</form>
+</body>
+</html>

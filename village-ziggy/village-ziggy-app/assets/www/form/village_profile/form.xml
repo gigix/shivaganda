@@ -1,0 +1,65 @@
+<form class="jr" autocomplete="off" id="village_profile">
+    <!--This form was created by transforming a javaRosa-style (X)Form using an XSLT sheet created by Aid Web Solutions.-->
+    <section class="form-logo"></section>
+    <h3 id="form-title">village_profile</h3>
+    <fieldset id="jr-preload-items" style="display:none;">
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/village_profile/start_time" data-preload="timestamp"
+                   data-preload-params="start" data-type-xml="dateTime"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/village_profile/end_time" data-preload="timestamp"
+                   data-preload-params="end" data-type-xml="dateTime"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/village_profile/today" data-preload="date"
+                   data-preload-params="today" data-type-xml="date"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/village_profile/imei" data-preload="property"
+                   data-preload-params="deviceid" data-type-xml="string"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/village_profile/phonenumber" data-preload="property"
+                   data-preload-params="phonenumber" data-type-xml="string"/>
+        </label>
+    </fieldset>
+
+
+    <label class="">
+        <span lang="" class=" active">Village Name</span>
+        <input autocomplete="off" type="text" name="/village_profile/village" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Village Code</span>
+        <input autocomplete="off" type="text" name="/village_profile/village_code" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">GPS Location</span>
+        <span lang="" class="jr-hint active">GPS coordinates can only be collected when outside.</span>
+        <input autocomplete="off" type="text" name="/village_profile/gps" data-type-xml="geopoint"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">SAG Contact Number</span>
+        <input autocomplete="off" type="text" name="/village_profile/sag_contact_phone" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Headman Name</span>
+        <input autocomplete="off" type="text" name="/village_profile/headman_name" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Headman Contact</span>
+        <input autocomplete="off" type="text" name="/village_profile/headman_contact" data-type-xml="string"/>
+    </label>
+
+    <fieldset id="jr-calculated-items" style="display:none;">
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/village_profile/meta/instanceID"
+                   data-calculate="concat('uuid:', uuid())" data-type-xml="string"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/village_profile/formhub/uuid"
+                   data-calculate="'9f39e98d4d6642f4bc8e278f0eff12d2'" data-type-xml="string"/>
+        </label>
+    </fieldset>
+</form>

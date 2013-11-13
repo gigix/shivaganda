@@ -1,0 +1,28 @@
+{
+    "form_data_definition_version": "1",
+    "form": {
+        "bind_type": "Patient",
+        "default_bind_path": "/model/instance/Patient/",
+        "fields": [
+            {
+                "name": "id"
+            },
+            {
+                "name": "first_name",
+                "bind": "/model/instance/Patient/first_name"
+            },
+            {
+                "name": "last_name",
+                "bind": "/model/instance/Patient/last_name"
+            },
+            {
+                "name": "gender",
+                "bind": "/model/instance/Patient/gender"
+            },
+            {
+                "name": "age",
+                "bind": "/model/instance/Patient/age"
+            }
+        ]
+    }
+}

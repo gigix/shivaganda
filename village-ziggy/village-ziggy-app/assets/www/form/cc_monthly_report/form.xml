@@ -1,0 +1,156 @@
+<form class="jr" autocomplete="off" id="cc_monthly_report_form">
+    <!--This form was created by transforming a javaRosa-style (X)Form using an XSLT sheet created by Aid Web Solutions.-->
+    <section class="form-logo"></section>
+    <h3 id="form-title">cc_monthly_report_form</h3>
+    <fieldset id="jr-preload-items" style="display:none;">
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/cc_monthly_report_form/start_time" data-preload="timestamp"
+                   data-preload-params="start" data-type-xml="dateTime"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/cc_monthly_report_form/end_time" data-preload="timestamp"
+                   data-preload-params="end" data-type-xml="dateTime"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/cc_monthly_report_form/today" data-preload="date"
+                   data-preload-params="today" data-type-xml="date"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/cc_monthly_report_form/imei" data-preload="property"
+                   data-preload-params="deviceid" data-type-xml="string"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/cc_monthly_report_form/phonenumber" data-preload="property"
+                   data-preload-params="phonenumber" data-type-xml="string"/>
+        </label>
+    </fieldset>
+
+
+    <label class="">
+        <span lang="" class=" active">INSTRUCTION. Before entering data ensure you have done the quality check with the
+            SAG and filled out the results on the SAG form.
+        </span>
+        <input autocomplete="off" type="text" name="/cc_monthly_report_form/instruction_note" data-type-xml="string"
+               readonly="readonly"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Village Code (hidden)</span>
+        <span lang="" class="jr-hint active">passed in from ziggy</span>
+        <input autocomplete="off" type="text" name="/cc_monthly_report_form/village_code" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Village Name</span>
+        <span lang="" class="jr-hint active">This will be passed in by Ziggy</span>
+        <input autocomplete="off" type="text" name="/cc_monthly_report_form/village_name" data-type-xml="string"/>
+    </label>
+    <fieldset class="restoring-sanity-to-legends ">
+        <fieldset>
+            <legend>
+                <span lang="" class=" active">What month are reporting data for?</span>
+            </legend>
+            <label class="clearfix ">
+                <input autocomplete="off" type="radio" name="/cc_monthly_report_form/reporting_month" value="08-2013"
+                       data-type-xml="select1"/>
+                <span lang="" class=" active">Aug 2013</span>
+            </label>
+            <label class="clearfix ">
+                <input autocomplete="off" type="radio" name="/cc_monthly_report_form/reporting_month" value="09-2013"
+                       data-type-xml="select1"/>
+                <span lang="" class=" active">Sep 2013</span>
+            </label>
+            <label class="clearfix ">
+                <input autocomplete="off" type="radio" name="/cc_monthly_report_form/reporting_month" value="10-2013"
+                       data-type-xml="select1"/>
+                <span lang="" class=" active">Oct 2013</span>
+            </label>
+            <label class="clearfix ">
+                <input autocomplete="off" type="radio" name="/cc_monthly_report_form/reporting_month" value="11-2013"
+                       data-type-xml="select1"/>
+                <span lang="" class=" active">Nov 2013</span>
+            </label>
+            <label class="clearfix ">
+                <input autocomplete="off" type="radio" name="/cc_monthly_report_form/reporting_month" value="12-2013"
+                       data-type-xml="select1"/>
+                <span lang="" class=" active">Dec 2013</span>
+            </label>
+        </fieldset>
+    </fieldset>
+    <label class="">
+        <span lang="" class=" active">Please record your current location?</span>
+        <span lang="" class="jr-hint active">Not possible to do this behind the scenes.</span>
+        <input autocomplete="off" type="text" name="/cc_monthly_report_form/gps" data-type-xml="geopoint"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">INSTRUCTION. Fill in the following questions from the SAG form totals.</span>
+        <input autocomplete="off" type="text" name="/cc_monthly_report_form/sag_instructions" data-type-xml="string"
+               readonly="readonly"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many Households are in this village?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/households" data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">What is the village population?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/village_population" data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many improved latrines are there in the village?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/improved_latrines" data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many latrines have a smooth cleanable floor?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/latrines_smooth_cleanable_floor"
+               data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many latrines have a lid ontop of the hole?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/latrines_with_lid" data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many latrines have a superstructure providing privacy?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/latrines_with_superstructure"
+               data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many latrines show signs that they have been used?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/latrines_signs_of_use"
+               data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many households have hand washers with soap are there?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/latrines_hand_washers"
+               data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many households have ALL of the improved latrine requirments?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/latrines_all_improved_reqs"
+               data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many Households did you quality check?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/households_quality_checked"
+               data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">How many quality checks were accurate?</span>
+        <input autocomplete="off" type="number" name="/cc_monthly_report_form/checks_accurate" data-type-xml="int"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Before taking the form, please ensure that the SAG member copies all the household
+            names onto next months reporting sheet.
+        </span>
+        <input autocomplete="off" type="text" name="/cc_monthly_report_form/final_note" data-type-xml="string"
+               readonly="readonly"/>
+    </label>
+
+    <fieldset id="jr-calculated-items" style="display:none;">
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/cc_monthly_report_form/meta/instanceID"
+                   data-calculate="concat('uuid:', uuid())" data-type-xml="string"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/cc_monthly_report_form/formhub/uuid"
+                   data-calculate="'1198528fa4114d06b7f72e9bb293b598'" data-type-xml="string"/>
+        </label>
+    </fieldset>
+</form>

@@ -1,0 +1,40 @@
+{
+    "form_data_definition_version": "1",
+    "form": {
+        "bind_type": "village",
+        "default_bind_path": "/model/instance/village_profile/",
+        "fields": [
+            {
+                "name": "id"
+            },
+            {
+                "name": "name",
+                "bind": "/model/instance/village_profile/village"
+            },
+            {
+                "name": "code",
+                "bind": "/model/instance/village_profile/village_code"
+            },
+            {
+                "name": "gps",
+                "bind": "/model/instance/village_profile/gps"
+            },
+            {
+                "name": "sagContactNumber",
+                "bind": "/model/instance/village_profile/sag_contact_phone"
+            },
+            {
+                "name": "headmanName",
+                "bind": "/model/instance/village_profile/headman_name"
+            },
+            {
+                "name": "headmanContactNumber",
+                "bind": "/model/instance/village_profile/headman_contact"
+            },
+            {
+                "name": "submissionDate",
+                "bind": "/model/instance/village_profile/today"
+            }
+        ]
+    }
+}

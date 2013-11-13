@@ -1,0 +1,125 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Registration Form</h:title>
+    <model>
+      <instance>
+        <data id="build_Registration-Form_1383835857">
+          <meta>
+            <instanceID/>
+          </meta>
+          <firstname/>
+          <lastname/>
+          <gender/>
+          <photo/>
+          <questions_for_female>
+            <is_pregnant/>
+            <pregnancy_length/>
+          </questions_for_female>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="eng">
+          <text id="/data/firstname:label">
+            <value>What's your first name?</value>
+          </text>
+          <text id="/data/firstname:hint">
+            <value>or given name</value>
+          </text>
+          <text id="/data/lastname:label">
+            <value>What's your last name?</value>
+          </text>
+          <text id="/data/lastname:hint">
+            <value>or family name</value>
+          </text>
+          <text id="/data/gender:label">
+            <value>What's your gender?</value>
+          </text>
+          <text id="/data/gender:hint">
+            <value></value>
+          </text>
+          <text id="/data/gender:option0">
+            <value>Male</value>
+          </text>
+          <text id="/data/gender:option1">
+            <value>Female</value>
+          </text>
+          <text id="/data/gender:option2">
+            <value>Other</value>
+          </text>
+          <text id="/data/photo:label">
+            <value>Upload your photo</value>
+          </text>
+          <text id="/data/questions_for_female:label">
+            <value>Female Only Questions</value>
+          </text>
+          <text id="/data/questions_for_female/is_pregnant:label">
+            <value>Are You Pregnant?</value>
+          </text>
+          <text id="/data/questions_for_female/is_pregnant:option0">
+            <value>Yes</value>
+          </text>
+          <text id="/data/questions_for_female/is_pregnant:option1">
+            <value>No</value>
+          </text>
+          <text id="/data/questions_for_female/pregnancy_length:label">
+            <value>How Many Weeks Have You Been Pregnant?</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/firstname" type="string" required="true()"/>
+      <bind nodeset="/data/lastname" type="string" required="true()"/>
+      <bind nodeset="/data/gender" type="select1" required="true()"/>
+      <bind nodeset="/data/photo" type="binary" required="true()"/>
+      <bind nodeset="/data/questions_for_female" relevant="(/data/gender = 'female')"/>
+      <bind nodeset="/data/questions_for_female/is_pregnant" type="select1" relevant="(/data/gender = 'female')"/>
+      <bind nodeset="/data/questions_for_female/pregnancy_length" type="int" relevant="(/data/gender = 'female') and (/data/questions_for_female/is_pregnant = 'yes')" constraint="(. &gt; '0' and . &lt; '40')" jr:constraintMsg="Value must be between 0 and 40"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/data/firstname">
+      <label ref="jr:itext('/data/firstname:label')"/>
+      <hint ref="jr:itext('/data/firstname:hint')"/>
+    </input>
+    <input ref="/data/lastname">
+      <label ref="jr:itext('/data/lastname:label')"/>
+      <hint ref="jr:itext('/data/lastname:hint')"/>
+    </input>
+    <select1 ref="/data/gender">
+      <label ref="jr:itext('/data/gender:label')"/>
+      <hint ref="jr:itext('/data/gender:hint')"/>
+      <item>
+        <label ref="jr:itext('/data/gender:option0')"/>
+        <value>male</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/gender:option1')"/>
+        <value>female</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/gender:option2')"/>
+        <value>other</value>
+      </item>
+    </select1>
+    <upload ref="/data/photo" mediatype="image/*">
+      <label ref="jr:itext('/data/photo:label')"/>
+    </upload>
+    <group>
+      <label ref="jr:itext('/data/questions_for_female:label')"/>
+      <select1 ref="/data/questions_for_female/is_pregnant">
+        <label ref="jr:itext('/data/questions_for_female/is_pregnant:label')"/>
+        <item>
+          <label ref="jr:itext('/data/questions_for_female/is_pregnant:option0')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/questions_for_female/is_pregnant:option1')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/data/questions_for_female/pregnancy_length">
+        <label ref="jr:itext('/data/questions_for_female/pregnancy_length:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

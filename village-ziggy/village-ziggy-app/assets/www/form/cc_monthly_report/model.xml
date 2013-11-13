@@ -1,0 +1,35 @@
+<model>
+    <instance xmlns="http://www.w3.org/2002/xforms">
+        <cc_monthly_report_form id="cc_monthly_report_form">
+            <formhub>
+                <uuid/>
+            </formhub>
+            <instruction_note/>
+            <village_code/>
+            <village_name/>
+            <reporting_month/>
+            <gps/>
+            <sag_instructions/>
+            <households/>
+            <village_population/>
+            <improved_latrines/>
+            <latrines_smooth_cleanable_floor/>
+            <latrines_with_lid/>
+            <latrines_with_superstructure/>
+            <latrines_signs_of_use/>
+            <latrines_hand_washers/>
+            <latrines_all_improved_reqs/>
+            <households_quality_checked/>
+            <checks_accurate/>
+            <final_note/>
+            <start_time/>
+            <end_time/>
+            <today/>
+            <imei/>
+            <phonenumber/>
+            <meta>
+                <instanceID/>
+            </meta>
+        </cc_monthly_report_form>
+    </instance>
+</model>

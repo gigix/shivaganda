@@ -1,0 +1,23 @@
+<model>
+    <instance xmlns="http://www.w3.org/2002/xforms">
+        <village_profile id="village_profile">
+            <formhub>
+                <uuid/>
+            </formhub>
+            <village/>
+            <village_code/>
+            <gps/>
+            <sag_contact_phone/>
+            <headman_name/>
+            <headman_contact/>
+            <start_time/>
+            <end_time/>
+            <today/>
+            <imei/>
+            <phonenumber/>
+            <meta>
+                <instanceID/>
+            </meta>
+        </village_profile>
+    </instance>
+</model>
