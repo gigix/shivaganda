@@ -1,0 +1,34 @@
+.restoring-sanity-to-legends .or-appearance-list-nolabel, .restoring-sanity-to-legends .or-appearance-label{
+  margin: -0.9em 0 -0.7em 0;
+  legend{ 
+    float: left;
+    border: none;
+    line-height: 17px;
+    max-width: 40%;
+    //border: 1px solid red;
+    min-height: 1px;}
+  label{
+    float: left;
+    //border: 1px solid red;
+    display: block;
+    //width: 100px;
+    text-align: center;
+      .active{
+        margin: 0 auto; } }
+  input{
+    margin: 0 10px 0 10px;
+    text-align: center;} }
+.or-appearance-list-nolabel{
+  label .active{
+    display: none !important;
+    float: none; } }
+.or .or-appearance-label{
+  legend ~ label:hover{
+    background-color: transparent;}
+  input{
+    float: none;
+    display: none !important; } 
+  img{
+    max-height: 30px;
+    max-width: 30px;
+    float: none;} }

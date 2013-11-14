@@ -3,6 +3,7 @@ package io.ona.ziggy.repository;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import io.ona.ziggy.domain.SyncStatus;
@@ -50,12 +51,15 @@ public class FormDataRepository extends ZiggyRepository {
     }
 
     public String queryUniqueResult(String sql) {
+        Log.d("ZIGGY", "query start");
         SQLiteDatabase database = masterRepository.getReadableDatabase();
         Cursor cursor = database.rawQuery(sql, new String[]{});
 
         cursor.moveToFirst();
         Map<String, String> result = readARow(cursor);
         cursor.close();
+
+        Log.d("ZIGGY", "query end");
 
         return new Gson().toJson(result);
     }

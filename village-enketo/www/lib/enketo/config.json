@@ -1,0 +1,16 @@
+{
+	"widgets": [
+		"widget/note/notewidget",
+		"widget/select-desktop/selectpicker",
+		"widget/select-mobile/selectpicker",
+		"widget/geopoint/geopointpicker",
+		"widget/table/tablewidget",
+		"widget/radio/radiopicker",
+		"widget/time/timepicker-extended",
+		"widget/date/datepicker-extended",
+		"widget/datetime/datetimepicker-extended",
+		"widget/mediagrid/mediagridpicker",
+		"widget/medialabel/medialabelwidget",
+		"widget/file-offline/offline-filepicker"
+	]
+}

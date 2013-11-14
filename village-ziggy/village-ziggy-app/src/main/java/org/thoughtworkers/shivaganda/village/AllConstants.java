@@ -16,5 +16,6 @@ public class AllConstants {
 
     public class FormNames {
         public static final String VILLAGE_REGISTRATION = "village_profile";
+        public static final String PATIENT_REGISTRATION = "Patient";
     }
 }

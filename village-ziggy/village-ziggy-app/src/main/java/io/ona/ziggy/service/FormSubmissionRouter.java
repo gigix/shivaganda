@@ -6,7 +6,6 @@ import io.ona.ziggy.repository.FormDataRepository;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.thoughtworkers.shivaganda.village.AllConstants.FormNames.VILLAGE_REGISTRATION;
 import static io.ona.ziggy.event.Event.FORM_SUBMITTED;
 import static io.ona.ziggy.util.Log.logWarn;
 
@@ -15,10 +14,10 @@ public class FormSubmissionRouter {
     private FormDataRepository formDataRepository;
 
     public FormSubmissionRouter(FormDataRepository formDataRepository,
-                                VillageRegistrationHandler villageRegistrationHandler) {
+                                String formName, FormSubmissionHandler formSubmissionHandler) {
         this.formDataRepository = formDataRepository;
         handlerMap = new HashMap<String, FormSubmissionHandler>();
-        handlerMap.put(VILLAGE_REGISTRATION, villageRegistrationHandler);
+        handlerMap.put(formName, formSubmissionHandler);
     }
 
     public void route(String instanceId) {

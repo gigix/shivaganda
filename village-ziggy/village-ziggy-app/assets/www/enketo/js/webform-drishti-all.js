@@ -4664,6 +4664,7 @@ $(document).ready(function() {
 	$(document).on('click', 'button#submit-form:not(:disabled)', function(event){
 		var jData, saveResult, 
 			$button = $(this);
+        console.log('submit');
 		$(this).btnBusyState(true);
 		//without this weird timeout trick the button won't change until form.validateForm() is complete
 		//something odd that seems to happen when adding things to DOM.

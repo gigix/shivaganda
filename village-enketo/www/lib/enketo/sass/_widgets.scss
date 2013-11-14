@@ -1,0 +1,15 @@
+// Dynamically created list of widget stylesheets to import based on the content
+// based on the content of config.json
+
+@import "../widget/note/note";
+@import "../widget/select-desktop/selectpicker";
+@import "../widget/select-mobile/selectpicker";
+@import "../widget/geopoint/geopointpicker";
+@import "../widget/table/tablewidget";
+@import "../widget/radio/radiopicker";
+@import "../widget/time/timepicker-extended";
+@import "../widget/date/datepicker-extended";
+@import "../widget/datetime/datetimepicker-extended";
+@import "../widget/mediagrid/mediagridpicker";
+@import "../widget/medialabel/medialabelwidget";
+@import "../widget/file-offline/offline-filepicker";

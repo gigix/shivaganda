@@ -5,8 +5,11 @@ import android.util.Log;
 import io.ona.ziggy.repository.*;
 import io.ona.ziggy.service.*;
 import io.ona.ziggy.util.Session;
+import org.thoughtworkers.shivaganda.village.service.PatientRegistrationHandler;
 
 import static android.preference.PreferenceManager.getDefaultSharedPreferences;
+import static org.thoughtworkers.shivaganda.village.AllConstants.FormNames.PATIENT_REGISTRATION;
+import static org.thoughtworkers.shivaganda.village.AllConstants.FormNames.VILLAGE_REGISTRATION;
 
 public class ZiggyContext {
     private static ZiggyContext ziggyContext;
@@ -17,7 +20,7 @@ public class ZiggyContext {
     private Session session;
 
     private FormSubmissionRouter formSubmissionRouter;
-    private VillageRegistrationHandler villageRegistrationHandler;
+    private PatientRegistrationHandler patientRegistrationHandler;
 
     private Repository repository;
     private SettingsRepository settingsRepository;
@@ -100,16 +103,16 @@ public class ZiggyContext {
     public FormSubmissionRouter formSubmissionRouter() {
         initRepository();
         if (formSubmissionRouter == null) {
-            formSubmissionRouter = new FormSubmissionRouter(formDataRepository(), villageRegistrationHandler());
+            formSubmissionRouter = new FormSubmissionRouter(formDataRepository(), PATIENT_REGISTRATION, patientRegistrationHandler());
         }
         return formSubmissionRouter;
     }
 
-    private VillageRegistrationHandler villageRegistrationHandler() {
-        if (villageRegistrationHandler == null) {
-            villageRegistrationHandler = new VillageRegistrationHandler();
+    private PatientRegistrationHandler patientRegistrationHandler() {
+        if (patientRegistrationHandler == null) {
+            patientRegistrationHandler = new PatientRegistrationHandler();
         }
-        return villageRegistrationHandler;
+        return patientRegistrationHandler;
     }
 
     public AllVillages allVillages() {

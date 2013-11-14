@@ -1,0 +1,11 @@
+{
+    "name": "shivaganda-village-enketo",
+    "description": "an implementation with enketo",
+    "version": "0.0.1",
+    "contributors": [
+        "Jeff Xiong"
+    ],
+    "dependencies": {
+        "express": "3.x"
+    }
+}
