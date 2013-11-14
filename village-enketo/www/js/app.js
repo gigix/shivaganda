@@ -54,7 +54,7 @@ requirejs( [ 'jquery', 'modernizr', 'js/Form' ],
                 $( '#validate-form' ).before( formStr );
                 initializeForm();
             }, 'text' );
-        } else if ( $( 'form.or' ).length > 0 ) {
+        } else if ( $( 'form.jr' ).length > 0 ) {
             $( '.guidance' ).remove();
             initializeForm();
         }
@@ -73,7 +73,7 @@ requirejs( [ 'jquery', 'modernizr', 'js/Form' ],
         //initialize the form
 
         function initializeForm() {
-            form = new Form( 'form.or:eq(0)', modelStr );
+            form = new Form( 'form.jr:eq(0)', modelStr );
             //for debugging
             window.form = form;
             //initialize form and check for load errors

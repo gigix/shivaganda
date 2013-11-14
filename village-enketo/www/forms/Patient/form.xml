@@ -1,0 +1,327 @@
+<form class="jr" autocomplete="off" id="Patient">
+    <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.-->
+    <section class="form-logo"></section>
+    <h3 id="form-title">Patient</h3>
+
+
+    <label class="">
+        <span lang="" class=" active">What&#x2019;s your first name?</span>
+        <span class="required">*</span>
+        <input autocomplete="off" type="text" name="/Patient/first_name" required="required" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">What&#x2019;s your last name?</span>
+        <span class="required">*</span>
+        <input autocomplete="off" type="text" name="/Patient/last_name" required="required" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">What&#x2019;s your age?</span>
+        <span class="required">*</span>
+        <input autocomplete="off" type="number" name="/Patient/age" required="required" data-type-xml="int"/>
+    </label>
+    <fieldset class="restoring-sanity-to-legends ">
+        <fieldset>
+            <legend>
+                <span lang="" class=" active">What&#x2019;s your gender?</span>
+                <span class="required">*</span>
+            </legend>
+            <label class="clearfix ">
+                <input autocomplete="off" type="radio" name="/Patient/gender" value="male" required="required"
+                       data-type-xml="select1"/>
+                <span lang="" class=" active">Male</span>
+            </label>
+            <label class="clearfix ">
+                <input autocomplete="off" type="radio" name="/Patient/gender" value="female" required="required"
+                       data-type-xml="select1"/>
+                <span lang="" class=" active">Female</span>
+            </label>
+        </fieldset>
+    </fieldset>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 1</span>
+        <input autocomplete="off" type="text" name="/Patient/something_1" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 2</span>
+        <input autocomplete="off" type="text" name="/Patient/something_2" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 3</span>
+        <input autocomplete="off" type="text" name="/Patient/something_3" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 4</span>
+        <input autocomplete="off" type="text" name="/Patient/something_4" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 5</span>
+        <input autocomplete="off" type="text" name="/Patient/something_5" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 6</span>
+        <input autocomplete="off" type="text" name="/Patient/something_6" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 7</span>
+        <input autocomplete="off" type="text" name="/Patient/something_7" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 8</span>
+        <input autocomplete="off" type="text" name="/Patient/something_8" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 9</span>
+        <input autocomplete="off" type="text" name="/Patient/something_9" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 10</span>
+        <input autocomplete="off" type="text" name="/Patient/something_10" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 11</span>
+        <input autocomplete="off" type="text" name="/Patient/something_11" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 12</span>
+        <input autocomplete="off" type="text" name="/Patient/something_12" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 13</span>
+        <input autocomplete="off" type="text" name="/Patient/something_13" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 14</span>
+        <input autocomplete="off" type="text" name="/Patient/something_14" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 15</span>
+        <input autocomplete="off" type="text" name="/Patient/something_15" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 16</span>
+        <input autocomplete="off" type="text" name="/Patient/something_16" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 17</span>
+        <input autocomplete="off" type="text" name="/Patient/something_17" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 18</span>
+        <input autocomplete="off" type="text" name="/Patient/something_18" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 19</span>
+        <input autocomplete="off" type="text" name="/Patient/something_19" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 20</span>
+        <input autocomplete="off" type="text" name="/Patient/something_20" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 21</span>
+        <input autocomplete="off" type="text" name="/Patient/something_21" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 22</span>
+        <input autocomplete="off" type="text" name="/Patient/something_22" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 23</span>
+        <input autocomplete="off" type="text" name="/Patient/something_23" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 24</span>
+        <input autocomplete="off" type="text" name="/Patient/something_24" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 25</span>
+        <input autocomplete="off" type="text" name="/Patient/something_25" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 26</span>
+        <input autocomplete="off" type="text" name="/Patient/something_26" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 27</span>
+        <input autocomplete="off" type="text" name="/Patient/something_27" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 28</span>
+        <input autocomplete="off" type="text" name="/Patient/something_28" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 29</span>
+        <input autocomplete="off" type="text" name="/Patient/something_29" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 30</span>
+        <input autocomplete="off" type="text" name="/Patient/something_30" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 31</span>
+        <input autocomplete="off" type="text" name="/Patient/something_31" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 32</span>
+        <input autocomplete="off" type="text" name="/Patient/something_32" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 33</span>
+        <input autocomplete="off" type="text" name="/Patient/something_33" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 34</span>
+        <input autocomplete="off" type="text" name="/Patient/something_34" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 35</span>
+        <input autocomplete="off" type="text" name="/Patient/something_35" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 36</span>
+        <input autocomplete="off" type="text" name="/Patient/something_36" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 37</span>
+        <input autocomplete="off" type="text" name="/Patient/something_37" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 38</span>
+        <input autocomplete="off" type="text" name="/Patient/something_38" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 39</span>
+        <input autocomplete="off" type="text" name="/Patient/something_39" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 40</span>
+        <input autocomplete="off" type="text" name="/Patient/something_40" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 41</span>
+        <input autocomplete="off" type="text" name="/Patient/something_41" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 42</span>
+        <input autocomplete="off" type="text" name="/Patient/something_42" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 43</span>
+        <input autocomplete="off" type="text" name="/Patient/something_43" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 44</span>
+        <input autocomplete="off" type="text" name="/Patient/something_44" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 45</span>
+        <input autocomplete="off" type="text" name="/Patient/something_45" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 46</span>
+        <input autocomplete="off" type="text" name="/Patient/something_46" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 47</span>
+        <input autocomplete="off" type="text" name="/Patient/something_47" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 48</span>
+        <input autocomplete="off" type="text" name="/Patient/something_48" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 49</span>
+        <input autocomplete="off" type="text" name="/Patient/something_49" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 50</span>
+        <input autocomplete="off" type="text" name="/Patient/something_50" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 51</span>
+        <input autocomplete="off" type="text" name="/Patient/something_51" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 52</span>
+        <input autocomplete="off" type="text" name="/Patient/something_52" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 53</span>
+        <input autocomplete="off" type="text" name="/Patient/something_53" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 54</span>
+        <input autocomplete="off" type="text" name="/Patient/something_54" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 55</span>
+        <input autocomplete="off" type="text" name="/Patient/something_55" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 56</span>
+        <input autocomplete="off" type="text" name="/Patient/something_56" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 57</span>
+        <input autocomplete="off" type="text" name="/Patient/something_57" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 58</span>
+        <input autocomplete="off" type="text" name="/Patient/something_58" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 59</span>
+        <input autocomplete="off" type="text" name="/Patient/something_59" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 60</span>
+        <input autocomplete="off" type="text" name="/Patient/something_60" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 61</span>
+        <input autocomplete="off" type="text" name="/Patient/something_61" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 62</span>
+        <input autocomplete="off" type="text" name="/Patient/something_62" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 63</span>
+        <input autocomplete="off" type="text" name="/Patient/something_63" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 64</span>
+        <input autocomplete="off" type="text" name="/Patient/something_64" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 65</span>
+        <input autocomplete="off" type="text" name="/Patient/something_65" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 66</span>
+        <input autocomplete="off" type="text" name="/Patient/something_66" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 67</span>
+        <input autocomplete="off" type="text" name="/Patient/something_67" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 68</span>
+        <input autocomplete="off" type="text" name="/Patient/something_68" data-type-xml="string"/>
+    </label>
+    <label class="">
+        <span lang="" class=" active">Some random field &#x2013; 69</span>
+        <input autocomplete="off" type="text" name="/Patient/something_69" data-type-xml="string"/>
+    </label>
+
+    <fieldset id="jr-calculated-items" style="display:none;">
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/Patient/meta/instanceID"
+                   data-calculate="concat('uuid:', uuid())" data-type-xml="string"/>
+        </label>
+        <label class="">
+            <input autocomplete="off" type="hidden" name="/Patient/formhub/uuid"
+                   data-calculate="'24f69584cbce4d33aa6692ca0db3c8d6'" data-type-xml="string"/>
+        </label>
+    </fieldset>
+</form>

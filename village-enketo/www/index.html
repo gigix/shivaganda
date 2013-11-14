@@ -4,12 +4,21 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese,latin-ext' rel='stylesheet' type='text/css'>
     <link type="text/css" href="lib/enketo/css/formhub.css" media="all" rel="stylesheet" />
 
+    <script type="text/javascript" src="lib/jquery.js"></script>
     <script type="text/javascript" src="lib/modernizr.js"></script>
 
-    <script type="text/javascript">
-        var modelStr = '<model><instance xmlns="http://www.w3.org/2002/xforms"><Patient id="Patient"><formhub><uuid/></formhub><first_name/><last_name/><age/><gender/><meta><instanceID/></meta></Patient></instance></model>';
-    </script>
     <script type="text/javascript" data-main="js/app.js" src="lib/require.js"></script>
+    <script type="text/javascript">
+        var modelStr;
+        $.ajax({url: "forms/Patient/model.xml", dataType: "text"}).done(function(data) {
+            document.hiddenData = data;
+            modelStr = data;
+        });
+        $.ajax({url: "forms/Patient/form.xml", dataType: "text"}).done(function(data) {
+            document.hiddenForm = data;
+            $("#form-container").html(data);
+        });
+    </script>
 </head>
 <body>
 <div class="main">
@@ -17,52 +26,8 @@
         <div class="form-header clearfix">
             <span class="form-language-selector"><span>Choose Language</span></span>
         </div>
-        <form class="or" autocomplete="off" id="Patient">
-            <!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSLT sheet created by Enketo LLC.-->
-            <section class="form-logo"></section>
-            <h3 id="form-title">Patient</h3>
 
-
-            <label class="">
-                <span lang="" class=" active">What&#x2019;s your first name?</span>
-                <input autocomplete="off" type="text" name="/Patient/first_name" data-type-xml="string"/>
-            </label>
-            <label class="">
-                <span lang="" class=" active">What&#x2019;s your last name?</span>
-                <input autocomplete="off" type="text" name="/Patient/last_name" data-type-xml="string"/>
-            </label>
-            <label class="">
-                <span lang="" class=" active">What&#x2019;s your age?</span>
-                <input autocomplete="off" type="number" name="/Patient/age" data-type-xml="int"/>
-            </label>
-            <fieldset class="restoring-sanity-to-legends ">
-                <fieldset>
-                    <legend>
-                        <span lang="" class=" active">What&#x2019;s your gender?</span>
-                    </legend>
-                    <label class="clearfix ">
-                        <input autocomplete="off" type="radio" name="/Patient/gender" value="male" data-type-xml="select1"/>
-                        <span lang="" class=" active">Male</span>
-                    </label>
-                    <label class="clearfix ">
-                        <input autocomplete="off" type="radio" name="/Patient/gender" value="female" data-type-xml="select1"/>
-                        <span lang="" class=" active">Female</span>
-                    </label>
-                </fieldset>
-            </fieldset>
-
-            <fieldset id="jr-calculated-items" style="display:none;">
-                <label class="">
-                    <input autocomplete="off" type="hidden" name="/Patient/meta/instanceID"
-                           data-calculate="concat('uuid:', uuid())" data-type-xml="string"/>
-                </label>
-                <label class="">
-                    <input autocomplete="off" type="hidden" name="/Patient/formhub/uuid"
-                           data-calculate="'5dd19124906f4f1b9841b0f2e8583679'" data-type-xml="string"/>
-                </label>
-            </fieldset>
-        </form>
-
+        <div id="form-container"></div>
 
         <button id="validate-form" class="btn btn-primary btn-large" ><i class="icon-ok icon-white"></i> Validate</button>
         <div class="enketo-power">Powered by <a href="http://enketo.org" title="enketo.org website">
