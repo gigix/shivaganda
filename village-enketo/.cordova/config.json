@@ -1,0 +1,9 @@
+{"lib": {
+    "www": {
+        "id": "phonegap",
+        "version": "3.1.0",
+        "uri": "https://github.com/phonegap/phonegap-app-hello-world/archive/3.1.0.tar.gz"
+    }
+}, "id": "org.thoughtworkers.shivaganda", "name": "Shivaganda Enketo", "phonegap": {
+    "id": 625663
+}}
