@@ -1,33 +1,43 @@
+<h2>Register A New Patient</h2>
+
 <form name="newPatient" ng-submit="save()" ng-controller='PatientCreateCtrl'>
-    <h2>Register A New Patient</h2>
-
-    <div class="form-group">
-        <label for='patient-first-name'>First Name</label>
-        <input id='patient-first-name' type="text" class="form-control" ng-model="patient.firstName" required/>
-    </div>
-
-    <div class="form-group">
-        <label for='patient-last-name'>Last Name</label>
-        <input id='patient-last-name' type="text" class="form-control" ng-model="patient.lastName" required/>
-    </div>
-
-    <div class="form-group">
-        <label for='patient-age'>Age</label>
-        <input id='patient-age' type="number" class="form-control" ng-model="patient.age" max="129" required/>
-    </div>
-
-    <div class="form-group">
-        <label>Gender</label>
-        <div class="radio">
-            <label>
-                <input type="radio" ng-model="patient.gender" value="male">Male
-            </label>
-        </div>
-        <div class="radio">
-            <label>
-                <input type="radio" ng-model="patient.gender" value="female">Female
-            </label>
+    <div class="row">
+        <div class="twelve columns">
+            <label for='patient-first-name'>First Name</label>
+            <input id='patient-first-name' type="text" ng-model="patient.firstName" required/>
         </div>
     </div>
-    <input type="submit" ng-disabled="newPatient.$invalid || patient.gender == undefined" class="btn btn-default"/>
+
+    <div class="row">
+        <div class="twelve columns">
+            <label for='patient-last-name'>Last Name</label>
+            <input id='patient-last-name' type="text" ng-model="patient.lastName" required/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <label for='patient-age'>Age</label>
+            <input id='patient-age' type="number" ng-model="patient.age" max="129" required/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <label>Gender</label>
+            <div>
+                <label for="patient-gender-male">
+                    <input id="patient-gender-male" type="radio" ng-model="patient.gender" value="male" />
+                    Male
+                </label>
+            </div>
+            <div>
+                <label for="patient-gender-female">
+                    <input id="patient-gender-female" type="radio" ng-model="patient.gender" value="female" />
+                    Female
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="submit" ng-disabled="newPatient.$invalid || patient.gender == undefined" class="large button expand"/>
 </form>
