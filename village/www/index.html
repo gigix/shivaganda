@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8"/>
 
-    <link rel="stylesheet" type="text/css" href="lib/foundation/stylesheets/foundation.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/foundation-4.3.2/css/foundation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shivaganda.css"/>
 
     <title>Shivaganda Villages</title>
 </head>
 
 <body data-role="page">
-<nav class='top-bar hide-for-small'>
+<nav class='top-bar'>
     <ul class="title-area">
         <li class="name">
             <h1><a href="#">Shivaganda Villages</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon">
+            <a href='#'><span>Menu</span></a>
         </li>
     </ul>
 
@@ -25,10 +29,17 @@
     </section>
 </nav>
 
-<div ng-view class="container twelve columns"></div>
+<section class="main">
+    <div ng-view class="container twelve columns"></div>
+</section>
+
+<script src="lib/foundation-4.3.2/js/vendor/jquery.js"></script>
+<script src="lib/foundation-4.3.2/js/vendor/custom.modernizr.js"></script>
+<script src="lib/foundation-4.3.2/js/foundation.min.js"></script>
 
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular/angular-route.js"></script>
+<script src="lib/angular/angular-touch.js"></script>
 
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>

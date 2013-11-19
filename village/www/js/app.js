@@ -2,6 +2,7 @@
 
 var shivagandaVillageApp = angular.module('shivagandaVillageApp', [
     'ngRoute',
+    'ngTouch',
     'shivagandaVillageControllers'
 ]);
 
@@ -25,3 +26,9 @@ shivagandaVillageApp.config(['$routeProvider',
             });
     }
 ]);
+
+shivagandaVillageApp.run(function ($rootScope) {
+    $rootScope.$on('$viewContentLoaded', function () {
+        $(document).foundation();
+    });
+});
