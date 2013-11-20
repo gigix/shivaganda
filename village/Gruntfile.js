@@ -8,9 +8,9 @@ module.exports = function(grunt) {
 
         // Metadata.
         meta: {
-            basePath: '../',
-            srcPath: '../assets/sass/',
-            deployPath: '../assets/css/'
+            basePath: '.',
+            srcPath: 'assets/sass',
+            deployPath: 'www/css'
         },
 
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
@@ -21,10 +21,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    '<%= meta.deployPath %>style.css': '<%= meta.srcPath %>style.scss'
-                },
-                options: {
-                    sourcemap: 'true'
+                    '<%= meta.deployPath %>/shivaganda.css': '<%= meta.srcPath %>/shivaganda.scss'
                 }
             }
         },
