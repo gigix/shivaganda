@@ -6,6 +6,13 @@
         <option name="UPDATE_PROPERTY_FILES" value="true" />
       </configuration>
     </facet>
+    <facet type="JRUBY" name="JRuby">
+      <configuration>
+        <JRUBY_FACET_CONFIG_ID NAME="JRUBY_SDK_NAME" VALUE="" />
+        <LOAD_PATH number="0" />
+        <I18N_FOLDERS number="0" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -15,6 +22,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-stdlib" level="application" />
   </component>
 </module>
 

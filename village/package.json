@@ -1,0 +1,12 @@
+{
+    "name": "shivaganda-village",
+    "description": "This is running in an offline device",
+    "version": "0.0.1",
+    "devDependencies": {
+        "grunt": "0.4.1",
+        "grunt-contrib-watch": "0.4.3",
+        "grunt-contrib-sass": "0.4.0"
+    },
+    "dependencies": {
+    }
+}
