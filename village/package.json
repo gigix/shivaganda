@@ -5,7 +5,9 @@
     "devDependencies": {
         "grunt": "0.4.1",
         "grunt-contrib-watch": "0.4.3",
-        "grunt-contrib-sass": "0.4.0"
+        "grunt-contrib-sass": "0.4.0",
+        "karma": "latest",
+        "grunt-karma": "latest"
     },
     "dependencies": {
     }

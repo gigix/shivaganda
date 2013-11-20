@@ -32,13 +32,21 @@ module.exports = function(grunt) {
                 ],
                 tasks: ['sass']
             }
+        },
+
+
+        karma: {
+            unit: {
+                configFile: 'karma.conf.js'
+            }
         }
     });
 
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-karma');
 
     // Default task.
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['karma', 'sass']);
 };
