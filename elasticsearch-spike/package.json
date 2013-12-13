@@ -9,6 +9,6 @@
         "jasmine-node" : "*"
     },
     "dependencies": {
-        "elasticsearchclient": "*"
+        "sage": "*"
     }
 }
