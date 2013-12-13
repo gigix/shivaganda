@@ -1,0 +1,14 @@
+{
+    "name": "elasticsearch-spike",
+    "description": "This is only a spike",
+    "version": "0.0.1",
+    "devDependencies": {
+        "grunt": "0.4.1",
+        "grunt-cli" : "*",
+        "grunt-jasmine-node": "*",
+        "jasmine-node" : "*"
+    },
+    "dependencies": {
+        "elasticsearchclient": "*"
+    }
+}
