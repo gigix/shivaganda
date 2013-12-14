@@ -8,7 +8,7 @@ describe("ElasticSearch", function () {
     var est = esi.type(typeName);
 
     beforeEach(function (done) {
-        esi.destroy(function (err, result) {
+        esi.destroy(function () {
             done();
         });
     });
